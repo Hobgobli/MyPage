@@ -1,0 +1,80 @@
+  <div id="pages">
+            
+            <a href="notes.html" id="notePageBtn"></a>
+            <!-- <button style="width: 100px;height: 100px;" onclick="saveLocalStorageToTxt()"></button> -->
+            <div id="mainPage">
+                <div class="leftbox" id="leftbox">
+                    <div class="tools" id="tools">
+            收藏栏
+                    </div>
+            
+            
+                    <!-- 网址分类容器 -->
+                    <div class="netcontainer" id="netcontainer">
+                    
+                    </div>
+              
+            
+                </div>
+            
+                <!-- 展开按钮 -->
+                <img id="menuBtn" src="images/menu.png" alt="" onclick="MenuBtnClick()">
+            
+            
+            
+                <div class="searchArea" id="searchArea">
+                    <label style="--clr:#6be7ff;">
+                        <input type="radio" name="searcnEngin" checked id="bing" value="bing">
+                        <i></i>
+                        <span>bing</span>
+                      </label>
+                      <label style="--clr:#6be7ff;"  >
+                        <input type="radio" name="searcnEngin" id="baidu" value="baidu">
+                        <i></i>
+                        <span>baidu</span>
+                      </label>
+                      <label style="--clr:#6be7ff;">
+                        <input type="radio" name="searcnEngin" id="sougou" value="sougou">
+                        <i></i>
+                        <span>sougou</span>
+                      </label>
+                      <label style="--clr:#6be7ff;" >
+                        <input type="radio" name="searcnEngin" id="google" value="google">
+                        <i></i>
+                        <span>google</span>
+                      </label>
+                      
+                </div>
+                <input type="text" placeholder="Please enter" id="searchInput">  
+                <img src="images/saerchBtn.ico" alt="" id="SearchBtn" onclick="Search()">
+            </div>
+
+            <div id="notePage">
+<img src="images/img-2.jpg" alt="" >
+            </div>
+        </div>
+        
+      
+    
+    
+    <div class="menulist">
+
+
+        <ul id="toolsList">
+            <li onclick="AddChategory()">添加分类</li>
+        </ul>
+        <ul id="summaryList">
+            <li onclick="ChageNameOrNet()" class="Re-name">修改</li>
+            <li onclick="DeleteChategory()" class="menuDelete">删除</li>  
+            <li onclick="AddItem()" class="AddNet">添加收藏</li>
+            <li onclick="AddChildChategory()" class="AddCha">添加分类</li>
+        </ul>
+        <ul id="aList">
+            <li onclick="ChageNameOrNet()" class="Re-name">修改</li>
+            <li onclick="DeleteItem()" class="menuDelete">删除</li>
+            <li onclick="AddItem()" class="AddNet">添加收藏</li>
+        </ul>
+        <ul id="netcontainerList">
+            <li onclick="AddChategory()" class="AddCha">添加分类</li>
+        </ul>
+    </div>
